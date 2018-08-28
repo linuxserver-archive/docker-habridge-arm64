@@ -9,7 +9,8 @@ LABEL maintainer="saarg"
 # install packages
 RUN \
  echo "**** install runtime packages ****" && \
- 	curl \
+ apk add --no-cache \
+	curl \
 	jq \
 	libcap \
 	openjdk8-jre && \
